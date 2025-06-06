@@ -186,7 +186,7 @@ La plataforma CryptoAcademy cuenta con las siguientes funcionalidades principale
 ## 🔗 Enlace a la Documentación Detallada
 
 La documentación técnica completa del proyecto, incluyendo diagramas y casos de prueba, se puede encontrar en:
-** **
+**https://m0r3n0svq.github.io/CryptoAcademy-TFG/**
 
 ---
 
