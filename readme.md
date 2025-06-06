@@ -238,4 +238,4 @@ Este proyecto se distribuye bajo la Licencia MIT. Ver el archivo `LICENSE.md` pa
 ---
 
 ## APK
-**https://drive.google.com/file/d/1ru87g9-RAkxou_IMk8rCDaH_jikoizAA/view?usp=sharing**
+**https://drive.google.com/file/d/1DH8TIT64X9G6wq43KUuIA_D343_cF0-D/view?usp=sharing**
