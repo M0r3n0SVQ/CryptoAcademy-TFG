@@ -53,7 +53,10 @@ public class AuthService implements AuthServiceI {
         Usuario usuario = new Usuario();
         usuario.setNombre(request.getNombre());
         usuario.setPassword(passwordEncoder.encode(request.getPassword()));
-        usuario.setEmail(request.getEmail());
+        usuarioRepository.findByEmail(request.getEmail())
+                .ifPresent(u -> {
+                    throw new RuntimeException("El email ya está registrado");
+                });
         usuario.setRol(rol);
 
         Usuario usuarioGuardado = usuarioRepository.save(usuario);
