@@ -10,11 +10,11 @@ class AppConstants {
   static const String _localApiProtocol = "http";
 
   // URL base para el backend local
-  static const String localApiBaseUrl = "$_localApiProtocol://$_localApiIp:$_localApiPort/api";
+  // static const String localApiBaseUrl = "$_localApiProtocol://$_localApiIp:$_localApiPort/api";
   
-  // static const String prodApiBaseUrl = "https://cryptoacademysb-production.up.railway.app/api";
+  static const String prodApiBaseUrl = "https://cryptoacademy-tfg-production.up.railway.app/api";
 
-  static const String activeApiBaseUrl = localApiBaseUrl; // Cambia a prodApiBaseUrl en producción
+  static const String activeApiBaseUrl = prodApiBaseUrl; // Cambia a prodApiBaseUrl en producción
 
   // --- Endpoints específicos
 
