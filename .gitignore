@@ -13,6 +13,9 @@ build/
 *.ipr
 *.iws
 
+application-local.properties
+
+
 # Android
 /android/app/src/main/assets/flutter_assets/
 /android/app/src/main/java/io/flutter/plugins/
