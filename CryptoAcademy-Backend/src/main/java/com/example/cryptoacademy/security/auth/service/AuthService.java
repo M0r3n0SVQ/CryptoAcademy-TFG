@@ -52,7 +52,7 @@ public class AuthService implements AuthServiceI {
 
         Usuario usuario = new Usuario();
         usuario.setNombre(request.getNombre());
-        usuario.setPassword(passwordEncoder.encode(request.getPassword()));
+        usuario.setHashContrasena(passwordEncoder.encode(request.getPassword()));
         usuarioRepository.findByEmail(request.getEmail())
                 .ifPresent(u -> {
                     throw new RuntimeException("El email ya está registrado");
