@@ -1,0 +1,29 @@
+package com.example.cryptoacademy.dto;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
+
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+
+@Data
+public class CoinGeckoDetallesDTO {
+    private String id;
+    private String symbol;
+    private String name;
+    private String image;
+    @JsonProperty("current_price")
+    private BigDecimal currentPrice;
+    @JsonProperty("market_cap")
+    private BigDecimal marketCap;
+    @JsonProperty("total_volume")
+    private BigDecimal totalVolume;
+    @JsonProperty("last_updated")
+    private LocalDateTime lastUpdated;
+
+    // Otros campos que quieras
+    @JsonProperty("price_change_24h")
+    private BigDecimal priceChange24h;
+    @JsonProperty("price_change_percentage_24h")
+    private BigDecimal priceChangePercentage24h;
+}
