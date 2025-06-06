@@ -137,14 +137,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   TextFormField(
                     controller: _nameController,
                     decoration: InputDecoration(
-                      labelText: 'Nombre Completo',
-                      hintText: 'Tu nombre y apellidos',
+                      labelText: 'Usuario',
                       prefixIcon: Icon(Icons.person_outline, color: colorScheme.onSurfaceVariant.withOpacity(0.7)),
                     ),
                     keyboardType: TextInputType.name,
                     validator: (value) {
                       if (value == null || value.isEmpty) {
-                        return 'Por favor, ingresa tu nombre';
+                        return 'Por favor, ingresa tu usuario';
                       }
                       return null;
                     },
