@@ -1,5 +1,6 @@
 package com.example.cryptoacademy.security.auth.service;
 
+import com.example.cryptoacademy.exception.EmailExistente;
 import com.example.cryptoacademy.persistance.model.Cartera;
 import com.example.cryptoacademy.persistance.model.Usuario;
 import com.example.cryptoacademy.persistance.model.RolUsuario;
@@ -48,6 +49,11 @@ public class AuthService implements AuthServiceI {
 
     @Override
     public AuthResponseDTO register(RegisterRequestDTO request) {
+
+        usuarioRepository.findByEmail(request.getEmail()).ifPresent(u -> {
+            throw new EmailExistente("Ya existe un usuario con ese email");
+        });
+
         RolUsuario rol = RolUsuario.USER;
 
         Usuario usuario = new Usuario();

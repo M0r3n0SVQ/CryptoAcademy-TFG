@@ -74,15 +74,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
           Navigator.of(context).pushReplacement(
             MaterialPageRoute(builder: (_) => const LoginScreen()),
           );
-          // Opcionalmente, podrías intentar un login automático aquí si el backend devuelve un token
-          // final authProvider = Provider.of<AuthProvider>(context, listen: false);
-          // await authProvider.login(tokenRecibidoDelRegistro, context);
         }
       } catch (e) {
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
-              content: Text('Error en el registro: $e'),
+              content: Text('Correo ya en uso.'),
               backgroundColor: AppColors.errorRed,
             ),
           );
@@ -107,8 +104,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
       appBar: AppBar(
         title: const Text('Crear Cuenta'),
         elevation: 0,
-        backgroundColor: Colors.transparent, // AppBar transparente
-        foregroundColor: colorScheme.onBackground, // Color de texto e iconos del AppBar
+        backgroundColor: Colors.transparent,
+        foregroundColor: colorScheme.onBackground,
       ),
       body: SafeArea(
         child: Center(
@@ -259,8 +256,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       ),
                       TextButton(
                         onPressed: _isLoading ? null : () {
-                          // Navegar de vuelta a la pantalla de Login
-                          Navigator.of(context).pop(); // Asume que se llegó a RegisterScreen desde LoginScreen
+                          Navigator.of(context).pop();
                         },
                         child: Text(
                           'Inicia Sesión',
