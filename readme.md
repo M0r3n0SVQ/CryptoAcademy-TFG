@@ -121,7 +121,7 @@ La plataforma CryptoAcademy cuenta con las siguientes funcionalidades principale
 ### Configuración del Backend (Spring Boot)
 1.  **Clonar el repositorio:**
     ```bash
-    git clone [https://github.com/AlvaroMorenoMorejon/CryptoAcademy-Backend.git](https://github.com/AlvaroMorenoMorejon/CryptoAcademy-Backend.git)
+    git clone https://github.com/M0r3n0SVQ/CryptoAcademy-Backend.git
     cd CryptoAcademy-Backend
     ```
 2.  **Configurar la Base de Datos MySQL:**
@@ -152,7 +152,7 @@ La plataforma CryptoAcademy cuenta con las siguientes funcionalidades principale
 ### Configuración del Frontend (Flutter)
 1.  **Clonar el repositorio:**
     ```bash
-    git clone [https://github.com/AlvaroMorenoMorejon/CryptoAcademy-Frontend.git](https://github.com/AlvaroMorenoMorejon/CryptoAcademy-Frontend.git)
+    git clone https://github.com/M0r3n0SVQ/CryptoAcademy-Frontend.git
     cd CryptoAcademy-Frontend
     ```
 2.  **Obtener dependencias:**
@@ -216,7 +216,7 @@ CryptoAcademy es una plataforma integral y funcional para la simulación de trad
     * De manera muy especial, a mis padres, por su apoyo incondicional, ánimo y confianza en mí durante todo este camino.
 * **Referencias:**
     * Documentación oficial de Flutter, Dart, Spring Boot, Java y MySQL.
-    * CoinGecko API: [https://www.coingecko.com/es/api/documentation](https://www.coingecko.com/es/api/documentation)
+    * CoinGecko API: https://www.coingecko.com/es/api/documentation
     * Librería `fl_chart` para los gráficos en Flutter.
 
 ---
