@@ -1,0 +1,18 @@
+# ===================================================================
+# ARCHIVO DE CONFIGURACI�N PARA DESARROLLO LOCAL
+# ===================================================================
+
+# Configuración de la base de datos local (copiar y rellenar en application-local.properties)
+db.url=jdbc:postgresql://localhost:5432/mi_base_de_datos
+db.username=
+db.password=
+
+# API Key para el servicio externo
+servicio.api.key=pega_tu_api_key_aqui
+
+# -- Configuraciones de Logging para Desarrollo Local  -
+logging.level.com.example.cryptoacademy=DEBUG
+logging.level.org.hibernate.SQL=DEBUG
+logging.level.org.hibernate.type.descriptor.sql.BasicBinder=TRACE
+
+spring.jpa.hibernate.ddl-auto=validate
