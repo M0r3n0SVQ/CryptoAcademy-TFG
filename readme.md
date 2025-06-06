@@ -121,7 +121,7 @@ La plataforma CryptoAcademy cuenta con las siguientes funcionalidades principale
 ### Configuración del Backend (Spring Boot)
 1.  **Clonar el repositorio:**
     ```bash
-    git clone https://github.com/M0r3n0SVQ/CryptoAcademy-Backend.git
+    git clone https://github.com/M0r3n0SVQ/CryptoAcademy-TFG.git
     cd CryptoAcademy-Backend
     ```
 2.  **Configurar la Base de Datos MySQL:**
@@ -152,7 +152,7 @@ La plataforma CryptoAcademy cuenta con las siguientes funcionalidades principale
 ### Configuración del Frontend (Flutter)
 1.  **Clonar el repositorio:**
     ```bash
-    git clone https://github.com/M0r3n0SVQ/CryptoAcademy-Frontend.git
+    git clone https://github.com/M0r3n0SVQ/CryptoAcademy-TFG.git
     cd CryptoAcademy-Frontend
     ```
 2.  **Obtener dependencias:**
