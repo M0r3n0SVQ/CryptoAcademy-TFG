@@ -104,14 +104,15 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   void _onTopNFilterChanged(TopNFilter? newFilter) {
-    if (newFilter != null && newFilter != _currentTopNFilter) {
-      if (!mounted) return;
-      setState(() {
-        _currentTopNFilter = newFilter;
-      });
-      _fetchMarketList(isRefresh: true);
-    }
+  if (newFilter != null && newFilter != _currentTopNFilter) {
+    if (!mounted) return;
+    setState(() {
+      _currentTopNFilter = newFilter;
+      _fetchMarketList(isRefresh: true); 
+    });
   }
+}
+
 
   void _onSortCriteriaChanged() {
     if (!mounted) return;
