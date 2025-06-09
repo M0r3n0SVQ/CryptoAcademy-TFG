@@ -27,7 +27,7 @@ public class DataInitializer implements CommandLineRunner {
     private final CoinGeckoService coinGeckoService;
     private final CriptomonedaRepository criptomonedaRepository;
 
-    @Value("${initializer.load-top-coins:50}")
+    @Value("${initializer.load-top-coins:250}")
     private int numCriptosCargar;
 
     @Value("${initializer.enabled:true}")
